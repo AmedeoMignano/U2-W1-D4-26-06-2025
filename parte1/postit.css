@@ -1,0 +1,125 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: dimgrey;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 3.3rem;
+  font-weight: 100;
+}
+article {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+article div {
+  width: 350px;
+  height: 280px;
+  margin-bottom: 6rem;
+}
+@keyframes stick {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.postit {
+  animation: stick 2s linear 0s 1 backwards;
+}
+
+.yellow {
+  background: #f6f6c9;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 201, 1) 89%,
+    rgba(196, 192, 192, 1) 100%
+  );
+}
+.green {
+  background: #d0f4cd;
+  background: linear-gradient(
+    180deg,
+    rgba(208, 244, 205, 1) 89%,
+    rgba(196, 192, 192, 1) 100%
+  );
+}
+.purple {
+  background: #b7b6d4;
+  background: linear-gradient(
+    180deg,
+    rgba(183, 182, 212, 1) 89%,
+    rgba(196, 192, 192, 1) 100%
+  );
+}
+.postit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 9rem;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.8);
+}
+#post1 {
+  transform: rotate(-5deg);
+}
+#post2 {
+  transform: rotate(4deg);
+}
+#post3 {
+  transform: rotate(-7deg);
+}
+#post4 {
+  transform: rotate(11deg);
+}
+#post5 {
+  transform: rotate(-5deg);
+}
+#post6 {
+  transform: rotate(-8deg);
+}
+#post7 {
+  transform: rotate(-3deg);
+}
+#post8 {
+  transform: rotate(3deg);
+}
+#post1:hover,
+#post2:hover,
+#post3:hover,
+#post4:hover,
+#post5:hover,
+#post6:hover,
+#post7:hover,
+#post8:hover {
+  transform: rotate(0deg) scale(1.2);
+  box-shadow: 1px 6px 20px 12px rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+#post1,
+#post2,
+#post3,
+#post4,
+#post5,
+#post6,
+#post7,
+#post8 {
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
